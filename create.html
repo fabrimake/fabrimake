@@ -45,13 +45,53 @@
 <div class="container" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-8">
-      <h2>Lets create a new item to show off</h2>
-      <h5>First lets upload the print files</h5>
+      <h2>Lets create a new item</h2>
+      <br>
+      <h5>What is this thing?</h5>
+        <label for="fname">Thing Name</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="3dprint">3D Print</option>
+          <option value="lasercut">Laser</option>
+          <option value="cnc">CNC</option>
+        </select><br>
+        <label for="license">License</label>
+        <select id="license">
+          <option value="creative">Creative Commons</option>
+          <option value="gpl">GPL</option>
+          <option value="lgpl">LGPL</option>
+        </select><br>
+        <label for="fname">Tags</label>
+        <input type="text" id="tags" name="tags"><br>
+      <h5>Tell us all about this thing!</h5>
+      <label for="summary">Summary</label><br>
+      <textarea id="sumary" rows="4" cols="50"></textarea>
+      <br>
+      <h5>Print Settings</h5>
       <form action="/action_page.php">
-        <input type="file" id="myFile" name="filename">
+        <label for="phone">Printer Brand</label><br>
+        <input type="text" placeholder="Printer Brand"><br>
+        <label for="phone">Printer Model</label><br>
+        <input type="text" placeholder="Model"><br>
+        <label for="phone">Rafts</label><br>
+        <input type="text" placeholder="Rafts"><br>
+        <label for="phone">Supports</label><br>
+        <input type="text" placeholder="Supports"><br>
+        <label for="phone">Resolution</label><br>
+        <input type="text" placeholder="Resolution"><br>
+        <label for="phone">Infill</label><br>
+        <input type="text" placeholder="Infill %"><br>
+        <label for="phone">Filament Brand</label><br>
+        <input type="text" placeholder="Brand"><br>
+        <label for="phone">Filament Color</label><br>
+        <input type="text" placeholder="Color"><br>
+        <label for="phone">Filament Material</label><br>
+        <input type="text" placeholder="Material"><br>
+        <label for="phone">Notes</label><br>
+        <input type="text" placeholder="Notes"><br>
         <input type="submit">
       </form>
-      <br>
       <h5>Now lets upload images so people can see what they will look like</h5>
       <form action="/action_page.php">
         <input type="file" id="myFile" name="filename">
